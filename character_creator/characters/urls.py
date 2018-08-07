@@ -28,4 +28,4 @@ urlpatterns = [
     path('upspecial/', views.UpSpecialListCreate.as_view()),
     path('downspecial/', views.DownSpecialListCreate.as_view()),
     path('finalsmash/', views.FinalSmashListCreate.as_view()),
-] # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
