@@ -10,11 +10,12 @@ class MovesetInline(admin.TabularInline):
 class CharacterAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Name',                  {'fields': ['name']}),
+        ('Series',                {'fields', ['series']})
         ('Date Published',        {'fields': ['pub_date']}),
     ]
     inlines = [MovesetInline]
-    list_display = ('question_text', 'pub_date', 'was_published_recently')
+    list_display = ('name', 'pub_date')
     list_filter = ['pub_date']
-    search_fields = ['question_text']
+    search_fields = ['name', 'series']
 
 admin.site.register(Character, CharacterAdmin)
