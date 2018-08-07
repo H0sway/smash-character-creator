@@ -72,6 +72,10 @@ class DownThrowListCreate(generics.ListCreateAPIView):
     queryset = Down_Throw.objects.all()
     serializer_class = DownThrowSerializer
 
+class NeutralSpecialListCreate(generics.ListCreateAPIView):
+    queryset = Neutral_Special.objects.all()
+    serializer_class = NeutralSpecialSerializer
+
 class SideSpecialListCreate(generics.ListCreateAPIView):
     queryset = Side_Special.objects.all()
     serializer_class = SideSpecialSerializer

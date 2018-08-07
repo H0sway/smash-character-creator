@@ -87,6 +87,11 @@ class DownThrowSerializer(serializers.HyperlinkedModelSerializer):
         model = Down_Throw
         fields = '__all__'
 
+class NeutralSpecialSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Neutral_Special
+        fields = '__all__'
+
 class SideSpecialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Side_Special
