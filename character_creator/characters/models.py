@@ -8,6 +8,7 @@ class Character(models.Model):
     name = models.CharField(max_length=50)
     series = models.CharField(max_length=50)
     description = models.CharField(max_length=2000)
+    char_image = models.ImageField(default="default.png")
     pub_date = models.DateTimeField(auto_now_add=True)
 
 class Neutral_Attack(models.Model):
