@@ -23,9 +23,9 @@ urlpatterns = [
     path('backwardthrow/', views.BackwardThrowListCreate.as_view()),
     path('upthrow/', views.UpThrowListCreate.as_view()),
     path('downthrow/', views.DownThrowListCreate.as_view()),
-    path('neutralspecial/', views.NeutralSpecialSerializer.as_view()),
-    path('sidespecial/', views.SideSpecialSerializer.as_view()),
+    path('neutralspecial/', views.NeutralSpecialListCreate.as_view()),
+    path('sidespecial/', views.SideSpecialListCreate.as_view()),
     path('upspecial/', views.UpSpecialListCreate.as_view()),
     path('downspecial/', views.DownSpecialListCreate.as_view()),
     path('finalsmash/', views.FinalSmashListCreate.as_view()),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

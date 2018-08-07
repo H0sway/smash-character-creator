@@ -1,113 +1,113 @@
 # Import modules, models
 from rest_framework import serializers
-from characters.models import .
+from characters import models
 
 class CharacterSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Character
+        model = models.Character
         fields = '__all__'
 
 class NeutralAttackSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Neutral_Attack
+        model = models.Neutral_Attack
         fields = '__all__'
 
 class ForwardTiltSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Forward_Tilt
+        model = models.Forward_Tilt
         fields = '__all__'
 
 class UpTiltSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Up_Tilt
+        model = models.Up_Tilt
         fields = '__all__'
 
 class DownTiltSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Down_Tilt
+        model = models.Down_Tilt
         fields = '__all__'
 
 class ForwardSmashSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Forward_Smash
+        model = models.Forward_Smash
         fields = '__all__'
 
 class UpSmashSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Up_Smash
+        model = models.Up_Smash
         fields = '__all__'
 
 class DownSmashSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Down_Smash
+        model = models.Down_Smash
         fields = '__all__'
 
 class DashAttackSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Dash_Attack
+        model = models.Dash_Attack
         fields = '__all__'
 
 class ForwardArialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Forward_Arial
+        model = models.Forward_Arial
         fields = '__all__'
 
 class BackwardArialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Backward_Arial
+        model = models.Backward_Arial
         fields = '__all__'
 
 class UpArialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Up_Arial
+        model = models.Up_Arial
         fields = '__all__'
 
 class DownArialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Down_Arial
+        model = models.Down_Arial
         fields = '__all__'
 
 class ForwardThrowSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Forward_Throw
+        model = models.Forward_Throw
         fields = '__all__'
 
 class BackwardThrowSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Backward_Throw
+        model = models.Backward_Throw
         fields = '__all__'
 
 class UpThrowSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Up_Throw
+        model = models.Up_Throw
         fields = '__all__'
 
 class DownThrowSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Down_Throw
+        model = models.Down_Throw
         fields = '__all__'
 
 class NeutralSpecialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Neutral_Special
+        model = models.Neutral_Special
         fields = '__all__'
 
 class SideSpecialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Side_Special
+        model = models.Side_Special
         fields = '__all__'
 
 class UpSpecialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Up_Special
+        model = models.Up_Special
         fields = '__all__'
 
 class DownSpecialSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Down_Special
+        model = models.Down_Special
         fields = '__all__'
 
 class FinalSmashSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Final_Smash
+        model = models.Final_Smash
         fields = '__all__'

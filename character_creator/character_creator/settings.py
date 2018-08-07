@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'characters' # Allow the characters module to be used
+    'characters', # Allow the characters module to be used
+    'rest_framework' # Enable the REST framework
 ]
 
 MIDDLEWARE = [
