@@ -8,4 +8,4 @@ from . import views
 urlpatterns = [
     path('characters/', views.CharacterListCreate.as_view()),
     path('moveset/', views.MovesetListCreate.as_view()),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
