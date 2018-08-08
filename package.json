@@ -4,7 +4,9 @@
   "description": "Design your favorite characters to fight in Smash!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch --mode development ./character_creator/frontend/src/index.js --output ./character_creator/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./character_creator/frontend/src/index.js --output ./character_creator/frontend/static/frontend/main.js"
   },
   "repository": {
     "type": "git",
