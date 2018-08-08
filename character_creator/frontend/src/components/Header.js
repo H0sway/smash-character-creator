@@ -5,18 +5,21 @@ import { LinkContainer } from 'react-router-bootstrap';
 const Header = () => {
   return (
     <header className="header-wrapper">
-      <Navbar fluid staticTop>
+      <Navbar fluid staticTop collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>Super Smash Bros. Character Creator</Navbar.Brand>
         </Navbar.Header>
-        <Nav pullRight>
-          <LinkContainer to="/">
-            <NavItem>Home</NavItem>
-          </LinkContainer>
-          <LinkContainer to="/create">
-            <NavItem>Create!</NavItem>
-          </LinkContainer>
-        </Nav>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <Nav>
+            <LinkContainer to="/">
+              <NavItem>Home</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/create">
+              <NavItem>Create!</NavItem>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </header>
   )
