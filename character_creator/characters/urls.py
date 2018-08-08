@@ -7,5 +7,6 @@ from . import views
 # Urls for the server
 urlpatterns = [
     path('characters/', views.CharacterListCreate.as_view()),
+    path('characters/<int:character_id>', views.CharacterDetail.as_view()),
     path('moveset/', views.MovesetListCreate.as_view()),
 ] # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

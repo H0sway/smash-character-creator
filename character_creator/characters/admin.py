@@ -10,7 +10,7 @@ class MovesetInline(admin.TabularInline):
 class CharacterAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Name',                  {'fields': ['name']}),
-        ('Series',                {'fields', ['series']})
+        ('Series',                {'fields': ['series']}),
         ('Date Published',        {'fields': ['pub_date']}),
     ]
     inlines = [MovesetInline]
