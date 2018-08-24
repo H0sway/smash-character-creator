@@ -9,6 +9,19 @@ const config = {
         }
       },
       {
+        test: /\.css$/,
+        use: [
+          {loader: 'style-loader'},
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          },
+          {loader: 'sass-loader'}
+        ]
+      },
+      {
         test: /\.(png|jp(e*)g|svg|gif|)$/,
         use: [{
           loader: 'url-loader',
