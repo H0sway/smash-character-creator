@@ -1,4 +1,12 @@
+// Import dependencies
+const path = require('path');
+
 const config = {
+  entry: './character_creator/frontend/src/index.js',
+    output: {
+        path: path.resolve(__dirname,'character_creator/frontend/static/frontend'),
+        filename: 'main.js',
+    },
   module: {
     rules: [
       {
@@ -27,7 +35,7 @@ const config = {
           loader: 'url-loader',
           options: {
             limit: 8000, // Convert images < 8kb to base64 strings
-            name: 'images/[hash]-[name].[ext]'
+            name: 'images/[path][name]-[hash:8].[ext]'
           }
         }]
       }

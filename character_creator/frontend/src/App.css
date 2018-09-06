@@ -1,5 +1,17 @@
 body {
-  background: #000;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #000000;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.container {
+  width: 95%;
 }
 
 .navbar {
@@ -8,4 +20,15 @@ body {
   margin-right: 0;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.home-button {
+  padding: 1em;
+  background: #A61C00;
+}
+
+.home-title {
+  margin: 3em auto;
+  border: .2em solid #FFFFFF;
+  background: #A61C00;
 }
