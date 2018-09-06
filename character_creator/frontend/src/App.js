@@ -11,16 +11,18 @@ import Header from './components/Header';
 import Home from './components/Home';
 
 class App extends Component {
-  return (
-    <Router>
-      <div className="App">
-        <Grid>
-          <Header />
-          <Route exact path="/" component={Home} />
-        </Grid>
-      </div>
-    </Router>
-  );
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Grid>
+            <Header />
+            <Route exact path="/" component={Home} />
+          </Grid>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
