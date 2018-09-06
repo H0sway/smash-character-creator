@@ -7,16 +7,21 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100%;
+}
+
+.home-title {
+  margin: 3em auto;
+  border: .2em solid #FFFFFF;
+  background: #A61C00cc;
+}
+
+.home-title h1, h3 {
+  color: #FFFFFF;
 }
 
 .home-button {
   padding: 1em;
-  background: #A61C00;
-}
-
-.jumbotron {
-  margin: 3em auto;
-  border: .2em solid #FFFFFF;
-  background: #A61C00cc;
+  margin-top: 2em;
+  color: #FFFFFF;
+  background: #000000aa;
 }
