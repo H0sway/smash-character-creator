@@ -17,7 +17,8 @@ const config = {
             options: {
               modules: true
             }
-          }
+          },
+          {loader: 'sass-loader'}
         ]
       },
       {
