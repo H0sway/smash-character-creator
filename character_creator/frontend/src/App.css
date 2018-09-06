@@ -10,10 +10,6 @@ body {
   height: 100%;
 }
 
-.container {
-  width: 95%;
-}
-
 .navbar {
   display: flex;
   margin-left: 0;
@@ -27,7 +23,7 @@ body {
   background: #A61C00;
 }
 
-.home-title {
+.jumbotron {
   margin: 3em auto;
   border: .2em solid #FFFFFF;
   background: #A61C00;

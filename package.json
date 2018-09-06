@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --watch --mode development",
-    "build": "webpack --mode production ./character_creator/frontend/src/index.js --output ./character_creator/frontend/static/frontend/main.js"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
