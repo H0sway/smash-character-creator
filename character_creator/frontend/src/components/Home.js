@@ -3,8 +3,6 @@ import React from 'react';
 import { Jumbotron } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-import './styles/Home.css';
-
 // Functional component, no need to use a React component for now.
 const Home = () => {
   return (

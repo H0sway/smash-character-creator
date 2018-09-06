@@ -1,5 +1,6 @@
 // Import dependencies
 const path = require('path');
+const ExtractTextPlugin  = require('extract-text-webpack-plugin');
 
 const config = {
   entry: './character_creator/frontend/src/index.js',
@@ -18,16 +19,11 @@ const config = {
       },
       {
         test: /\.css$/,
-        use: [
-          {loader: 'style-loader'},
+        use: ExtractTextPlugin.extract(
           {
-            loader: 'css-loader',
-            options: {
-              modules: true
-            }
-          },
-          {loader: 'sass-loader'}
-        ]
+            fallback: 'style-loader',
+            use: ['css-loader']
+          })
       },
       {
         test: /\.(png|jp(e*)g|svg|gif|)$/,
@@ -40,7 +36,10 @@ const config = {
         }]
       }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin({filename: 'style.css'})
+  ]
 };
 
 module.exports = config;
