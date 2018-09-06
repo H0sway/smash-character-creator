@@ -8,19 +8,19 @@ import './App.css';
 
 // Import components
 import Header from './components/Header';
+import Home from './components/Home';
 
 class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <Grid>
-            <Header />
-          </Grid>
-        </div>
-      </Router>
-    );
-  }
+  return (
+    <Router>
+      <div className="App">
+        <Grid>
+          <Header />
+          <Route exact path="/" component={Home} />
+        </Grid>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
