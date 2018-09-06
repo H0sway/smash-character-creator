@@ -11,6 +11,8 @@ class CharacterAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Name',                  {'fields': ['name']}),
         ('Series',                {'fields': ['series']}),
+        ('Description',           {'fields': ['description']}),
+        ('Character Image',       {'fields': ['char_image']})
     ]
     inlines = [MovesetInline]
     list_display = ('name', 'pub_date')
