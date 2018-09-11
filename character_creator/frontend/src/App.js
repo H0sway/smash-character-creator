@@ -9,6 +9,7 @@ import './App.css';
 // Import components
 import Header from './components/Header';
 import Home from './components/Home';
+import Create from './components/Create';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Grid>
             <Header />
             <Route exact path="/" component={Home} />
+            <Route exact path="/create" component={Create} />
           </Grid>
         </div>
       </Router>
